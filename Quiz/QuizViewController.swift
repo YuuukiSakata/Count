@@ -21,21 +21,25 @@ class QuizViewController: UIViewController {
     //選択肢のボタン
     @IBOutlet var choiceButtons1: UIButton!
     @IBOutlet var choiceButtons2: UIButton!
-    @IBOutlet var choiceButtons3: UIButton!
+    
+    
+    //画像を表示するためのImageView!
+    @IBOutlet var quizImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var tmpArray = [AnyObject]()
         
-        //------------------------ここから下にクイズを書く------------------------//
-        tmpArray.append(["セミで鳴くのは？","オス","メス","オスもメスも両方",1])
-        tmpArray.append(["ドライアイスと同じ成分は？","石鹸の泡","ビールの泡","消化器の泡",2])
-        tmpArray.append(["「ロボット」は何語？","ラテン語","チェコ語","ギリシャ語",2])
-        tmpArray.append(["ゴルフのクラブにあるのは？","ナイフ","フォーク","スプーン",3])
-        tmpArray.append(["鬼が出てこない物語は？","かぐや姫","桃太郎","一寸法師",1])
-        tmpArray.append(["カモシカの汗の色は？","青","赤","黒",1])
-        //------------------------ここから上にクイズを書く------------------------//
+        tmpArray.append(["ヘルメット、ショルダーなど防具を付けるのは？","","",1])
+        tmpArray.append(["高校の大会で花園と呼ばれるのは？","","",2])
+        tmpArray.append(["11人でプレーするのは？","","",1])
+        tmpArray.append(["五郎丸選手は？","","",2])
+        tmpArray.append(["タッチダウンをするのは？","","",1])
+        tmpArray.append(["ボールを前に投げることができないのは？","","",2])
+        
+
         
         // 問題をシャッフルしてquizArrayに格納する
         while (tmpArray.count > 0) {
@@ -52,11 +56,10 @@ class QuizViewController: UIViewController {
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         choiceButtons1.setTitle(quizArray[0][1] as? String, forState: .Normal)
         choiceButtons2.setTitle(quizArray[0][2] as? String, forState: .Normal)
-        choiceButtons3.setTitle(quizArray[0][3] as? String, forState: .Normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
-        if quizArray[0][4] as! Int == sender.tag {
+        if quizArray[0][3] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer++
         }
