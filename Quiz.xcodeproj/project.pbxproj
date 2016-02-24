@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06CCEA951C793FDD00A6F2F0 /* rugby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06CCEA941C793FDD00A6F2F0 /* rugby.jpg */; };
-		06CCEA971C793FF300A6F2F0 /* amefoot.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CCEA961C793FF300A6F2F0 /* amefoot.png */; };
+		063490FE1C7DEAEE009E3F3F /* football5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 063490FC1C7DEAEE009E3F3F /* football5.gif */; };
+		063490FF1C7DEAEE009E3F3F /* rugby5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 063490FD1C7DEAEE009E3F3F /* rugby5.gif */; };
 		06CCEB101C79735900A6F2F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CCEB0D1C79735900A6F2F0 /* Default-568h@2x.png */; };
 		06CCEB111C79735900A6F2F0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CCEB0E1C79735900A6F2F0 /* Default-667h@2x.png */; };
 		06CCEB121C79735900A6F2F0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CCEB0F1C79735900A6F2F0 /* Default-736h@3x.png */; };
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06CCEA941C793FDD00A6F2F0 /* rugby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rugby.jpg; sourceTree = "<group>"; };
-		06CCEA961C793FF300A6F2F0 /* amefoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amefoot.png; sourceTree = "<group>"; };
+		063490FC1C7DEAEE009E3F3F /* football5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = football5.gif; sourceTree = "<group>"; };
+		063490FD1C7DEAEE009E3F3F /* rugby5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rugby5.gif; sourceTree = "<group>"; };
 		06CCEB0D1C79735900A6F2F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		06CCEB0E1C79735900A6F2F0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		06CCEB0F1C79735900A6F2F0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		B101ABF51B53796200919FB9 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				06CCEA961C793FF300A6F2F0 /* amefoot.png */,
-				06CCEA941C793FDD00A6F2F0 /* rugby.jpg */,
+				063490FC1C7DEAEE009E3F3F /* football5.gif */,
+				063490FD1C7DEAEE009E3F3F /* rugby5.gif */,
 				B101ABF71B53797400919FB9 /* start.png */,
 			);
 			name = images;
@@ -248,14 +248,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7343EA61A89986900D857EA /* Main.storyboard in Resources */,
+				063490FE1C7DEAEE009E3F3F /* football5.gif in Resources */,
 				AF223C441A8C6B9100E3B3B9 /* Default-568h@2x.png in Resources */,
 				B101ABFA1B53797400919FB9 /* start.png in Resources */,
 				06CCEB101C79735900A6F2F0 /* Default-568h@2x.png in Resources */,
-				06CCEA951C793FDD00A6F2F0 /* rugby.jpg in Resources */,
-				06CCEA971C793FF300A6F2F0 /* amefoot.png in Resources */,
 				C7343EAB1A89986900D857EA /* LaunchScreen.xib in Resources */,
 				C7343EA81A89986900D857EA /* Images.xcassets in Resources */,
 				06CCEB111C79735900A6F2F0 /* Default-667h@2x.png in Resources */,
+				063490FF1C7DEAEE009E3F3F /* rugby5.gif in Resources */,
 				AF223C451A8C6B9100E3B3B9 /* Default-667h@2x.png in Resources */,
 				AF223C461A8C6B9100E3B3B9 /* Default-736h@3x.png in Resources */,
 				06CCEB121C79735900A6F2F0 /* Default-736h@3x.png in Resources */,
