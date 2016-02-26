@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="与えられた問題がアメフトの話なのかラグビーの話なのか答えてください！すべての問題に答え終わると、あなたの成績が表示されます！果たして区別はついているのでしょうか。。。" id="0UR-GE-O8M">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="それって、アメフト？ラグビー？どちらでもない？すべての問題に答え終わると、あなたの成績が表示されます！果たして区別はついているのでしょうか。。。" id="0UR-GE-O8M">
                                 <rect key="frame" x="40" y="113" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,12 +80,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v7x-7P-MG0">
+                                <rect key="frame" x="110" y="240" width="100" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="khg-x6-zb8">
+                                <rect key="frame" x="88" y="472" width="145" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="v7x-7P-MG0" id="jeh-zE-E0X"/>
                         <outlet property="choiceButtons1" destination="kki-U3-jv0" id="h9T-rg-ovb"/>
                         <outlet property="choiceButtons2" destination="LiP-y2-zSH" id="faP-Gz-l2d"/>
+                        <outlet property="choiceButtons3" destination="khg-x6-zb8" id="WVJ-pd-RVS"/>
                         <outlet property="quizTextView" destination="LtN-I0-zAN" id="dPw-Tb-PaB"/>
                         <segue destination="owP-hA-BJF" kind="modal" identifier="toResultView" id="xvM-JA-bwI"/>
                     </connections>
@@ -127,8 +142,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="不安な問題は自分で調べよう！" textAlignment="center" minimumFontSize="17" id="URa-LH-C5t">
+                                <rect key="frame" x="52" y="410" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="97b-UG-l5g">
-                                <rect key="frame" x="135" y="481" width="105" height="30"/>
+                                <rect key="frame" x="108" y="465" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,12 +158,6 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="VhE-O4-awK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="不安な問題は自分で調べよう！" textAlignment="center" minimumFontSize="17" id="URa-LH-C5t">
-                                <rect key="frame" x="52" y="410" width="217" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

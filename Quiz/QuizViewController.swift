@@ -18,9 +18,13 @@ class QuizViewController: UIViewController {
     //クイズを表示するTextView
     @IBOutlet var quizTextView: UITextView!
     
+    //正解を表示するラベル
+    @IBOutlet var answerLabel: UILabel!
+    
     //選択肢のボタン
     @IBOutlet var choiceButtons1: UIButton!
     @IBOutlet var choiceButtons2: UIButton!
+    @IBOutlet var choiceButtons3: UIButton!
     
     
     //画像を表示するためのImageView!
@@ -32,12 +36,18 @@ class QuizViewController: UIViewController {
         
         var tmpArray = [AnyObject]()
         
-        tmpArray.append(["ヘルメット、ショルダーなど防具を付けるのは？","","",1])
-        tmpArray.append(["高校の大会で花園と呼ばれるのは？","","",2])
-        tmpArray.append(["11人でプレーするのは？","","",1])
-        tmpArray.append(["五郎丸選手は？","","",2])
-        tmpArray.append(["タッチダウンをするのは？","","",1])
-        tmpArray.append(["ボールを前に投げることができないのは？","","",2])
+        tmpArray.append(["一度交代でフィールドを出ると原則もどれないのは？","アメフト","ラグビー","どちらでもない",2])
+        tmpArray.append(["ヘルメット、ショルダーなど防具を付けるのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["高校の大会で花園と呼ばれるのは？","アメフト","ラグビー","どちらでもない",2])
+        tmpArray.append(["11人でプレーするのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["五郎丸選手は？","アメフト","ラグビー","どちらでもない",2])
+        tmpArray.append(["タッチダウンをするのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["ボールを前に投げることができるのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["監督が試合中選手に指示を送ることができないのは？","アメフト","ラグビー","どちらでもない",2])
+        tmpArray.append(["肩より上にタックルすることが禁じられている","アメフト","ラグビー","どちらでもない",2])
+        tmpArray.append(["中国語で書くと美式足球なのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["試合の時間が4クウォーターに分かれているのは？","アメフト","ラグビー","どちらでもない",1])
+        tmpArray.append(["攻守が明確に分かれている","アメフト","ラグビー","どちらでもない",1])
         
 
         
@@ -56,12 +66,20 @@ class QuizViewController: UIViewController {
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         choiceButtons1.setTitle(quizArray[0][1] as? String, forState: .Normal)
         choiceButtons2.setTitle(quizArray[0][2] as? String, forState: .Normal)
+        choiceButtons3.setTitle(quizArray[0][3] as? String, forState: .Normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
-        if quizArray[0][3] as! Int == sender.tag {
+        if quizArray[0][4] as! Int == sender.tag {
+            
             //正解数を増やす
             correctAnswer++
+            
+            answerLabel.backgroundColor = UIColor.redColor()
+            answerLabel.text = "正解"
+        }else  {
+            answerLabel.backgroundColor = UIColor.blueColor()
+            answerLabel.text = "不正解"
         }
         
         quizArray.removeAtIndex(0)
